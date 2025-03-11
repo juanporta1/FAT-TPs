@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+
+div{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+p{
+    margin-left: 100px;
+    color: green;
+}

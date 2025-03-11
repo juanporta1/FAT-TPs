@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+div{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+#uno{
+    top: 100px;
+    left: 100px;
+    background-color: red;
+}
+
+#dos{
+    top: 150px;
+    left: 150px;
+    background-color: blue;
+}
+
+#tres{
+    top: 200px;
+    left: 200px;
+    background-color: green;
+}

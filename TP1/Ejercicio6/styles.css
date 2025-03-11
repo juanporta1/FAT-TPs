@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
