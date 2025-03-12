@@ -1,0 +1,41 @@
+#ejercicioUno{
+    display: inline-block;
+    text-align: center;
+}
+
+#ejercicioDos{
+    /* Ambas formas a continuacion ocultan la caja, con la diferencia que display quita su lugar en el dom haciendo que no ocupe espacio y haciendo que de alguna forma no exista, mientras que visibility unicamente lo hace invicible*/
+    /* visibility: hidden; */
+    display: none;
+}
+
+#ejercicioTres{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+#ejercicioCuatro{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#ejercicioCinco{
+    /* Ejercicio Cinco*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /*Ejercicio Seis*/
+    flex-direction: row-reverse;
+}
+
+#ejercicioSiete{
+    flex-direction: column;
+    align-items: end;
+}
+
+#elementoTres{
+    align-self: center;
+}
