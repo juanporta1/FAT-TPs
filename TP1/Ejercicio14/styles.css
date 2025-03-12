@@ -1,0 +1,64 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#333;
+    }
+    .slider-container {
+    width:1000px;
+    margin: 10px 350px;
+    }
+    .slider-container .slider-viewport {
+    width:100%;
+    border-radius:10px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling:touch;
+    }
+    .slider-container .slide {
+    min-width: 100%;
+    height: 600px;
+    scroll-snap-align:center;
+    border-radius: 10px;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    }
+
+    /* Obtuve los codigo HEX a traves de una extension de Mozilla para pickear los colores de una pagina. */
+
+    .slider-container .slide:nth-child(1) {
+    
+    background-color: #FA8072;
+    }
+    .slider-container .slide:nth-child(2) {
+    background-color: #4682B4;
+    }
+    .slider-container .slide:nth-child(3) {
+    background-color: #9ACD32;
+    }
+    .slider-container .slide:nth-child(4) {
+    background-color:darkslategrey ;
+    }
+    .slider-container .links {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    gap: 5px; 
+    }
+    .slider-container .links a {
+    width: 30px;
+    height:30px;
+    background-color:#444;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration: none;
+    }
+    .slider-container .links a:hover {
+    background-color: #555;
+    }
