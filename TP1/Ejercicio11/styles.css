@@ -113,3 +113,97 @@ form{
 .women{
     margin-right: 10%;
 }
+
+.check-div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccc;
+}
+
+label:has(input[type="checkbox"]:checked){
+    color: black;
+    transition: all .3s;
+}
+
+label:has(input[type="checkbox"]){
+    color: #ccc;
+    transition: all .3s;
+}
+
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10%;
+    background-color: #ccc;
+    position: relative;
+    transform: translateY(25%);
+    transition: all .3s;
+
+}
+
+input[type="checkbox"]:hover{
+    background-color: #aaa;
+    transition: all .3s;
+}
+
+input[type="checkbox"]:checked{
+    background-color: black;
+    transition: all .3s;
+}
+
+input[type="checkbox"]:checked::before{
+    content: ''; /* Necesario para crear el pseudoelemento */
+    position: absolute;
+    top:50%;
+    left: 20%;
+    transform: rotate(-45deg);
+    width: 3px;
+    height: 6px;
+    background-color: white;
+    z-index: 50;
+}
+
+input[type="checkbox"]:checked::after{
+    content: ''; /* Necesario para crear el pseudoelemento */
+    position: absolute;
+    top:10%;
+    left: 60%;
+    transform: rotate(45deg);
+    width: 3px;
+    height: 10px;
+    background-color: white;
+    z-index: 50;
+}
+
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 10px #ddd, -2px -2px 10px #ddd;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #666;
+    transition: all .3s;
+
+}
+
+button:hover{
+    color: #444;
+    background-color: #eee;
+    transition: all .3s;
+}
+
+button:active{
+    box-shadow: 2px 2px 10px #ccc, -2px -2px 10px white;
+    background-color: #ddd;
+    transition: all .3s;
+}
