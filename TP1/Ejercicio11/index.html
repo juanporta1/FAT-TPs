@@ -10,20 +10,27 @@
     <div class="box">
          
             <form action="" method="GET">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required>
+                <div class="title-div">
+                    <span>Registrarse</span>
                 </div>
-                <div>
-                    <label for="lastname">Apellido</label>
-                    <input type="text" id="lastname" name="lastname" required>
+                
+                <div class="input-div">
+                   
+                    <input type="text" id="name" name="name" required class="input" placeholder=" ">
+                    <label for="name" class="input-label">Nombre:</label>
                 </div>
-                <div>
-                    <label>Sexo</label>
-                    <label><input type="radio" name="sex">Hombre</label>
-                    <label><input type="radio" name="sex" value="Mujer">Mujer</label>
+                <div class="input-div">
+                    
+                    <input type="text" id="lastname" name="lastname" required class="input" placeholder=" ">
+                    <label for="lastname" class="input-label">Apellido:</label>
                 </div>
-                <div>
+                <div class="radio-div">
+                    <label class="sex">Sexo</label>
+                    <label class="radio-label"><input type="radio" name="sex" class="radio">Hombre</label>
+                    <label class="radio-label women"><input type="radio" name="sex" value="Mujer" class="radio">Mujer</label>
+                    
+                </div>
+                <div class="input-div">
                     <label><input type="checkbox" checked>Deseo recibir informacion sobre novedades y ofertas.</label>
                     <label><input type="checkbox">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos.</label>
                 </div>
