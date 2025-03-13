@@ -154,11 +154,12 @@ bDiv.addEventListener('click', (e) => {
 
 bEq.addEventListener("click", () => {
     if (!isFirst){
-        principalValue = makeAOperation(Number(secondaryValue),Number(principalValue),op).toString();
+        principalValue = makeAOperation(Number(principalValue),Number(secondaryValue),op).toString();
         display.value = principalValue;
         isAfterEq = true;
+        reset = true;
     }else{
-        principalValue = makeAOperation(Number(secondaryValue),Number(principalValue),op).toString();
+        principalValue = makeAOperation(Number(principalValue),Number(secondaryValue),op).toString();
         display.value = principalValue;
     }
     secondaryDisplay.value = "";
