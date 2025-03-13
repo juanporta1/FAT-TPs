@@ -8,6 +8,28 @@ body{
     background-color:black;
 }
 
+.main-box{
+    display: flex;
+    transform: scale(2);
+    flex-direction: column;
+    position: relative;
+}
+
+.secondary-display{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    background-color: transparent;
+    border: none;
+    color: #5C5C5F;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:right;
+    direction: ltr;
+    box-sizing: border-box;
+    padding-right: 17px;
+    padding-top: 10px;
+}
+
 .principal-box{
     width: max-content;
     height: max-content;
@@ -15,7 +37,7 @@ body{
     padding: 5px;
     /* border: solid 1px #ccc; */
     grid-gap: 5px;
-    transform: scale(2);
+    
     grid-template-columns:  repeat(4, 50px);
     grid-template-rows:  repeat(5, 50px);
 }
