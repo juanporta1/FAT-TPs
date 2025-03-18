@@ -41,13 +41,14 @@ function makeAOperation(value1, value2, operation){
 for (let i = 0; i < 10; i++){
     const bNumber = document.getElementById(`b${i}`);
     bNumber.addEventListener('click', (e) => {
-        if (reset){
+        if (reset && isAfterEq){
             principalValue = "0";
             secondaryValue = "0";
             isFirst = true;
             op = "";
             display.value = "0";
             reset = false;
+            isAfterEq = false
         }
         if (isFirst){
             principalValue = principalValue.concat(`${i}`)
